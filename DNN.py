@@ -120,7 +120,8 @@ x_train,x_test,y_train,y_test,indices_train, indices_test = train_test_split(X,y
 
 # Neural network
 model = Sequential()
-# 9/4 eller 16/8
+
+#Two hidden layers used in this example
 model.add(Dense(9, input_dim=features-1, activation='relu'))
 model.add(Dense(4, activation='relu'))
 #model.add(Dropout(0.01))
